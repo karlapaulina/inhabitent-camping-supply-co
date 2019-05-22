@@ -1,0 +1,31 @@
+/**
+ * Sample @font-face rules for Novocento
+ * 
+ * Usage:
+ * Copy these rules into the appropriate Sass partial and update the file paths as needed
+ *
+*/
+
+@font-face {
+  font-family: 'Novecento Sans Web';
+  src: url('fonts/novecentosanswide-normal-webfont.eot');
+  src: url('fonts/novecentosanswide-normal-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/novecentosanswide-normal-webfont.woff2') format('woff2'),
+       url('fonts/novecentosanswide-normal-webfont.woff') format('woff'),
+       url('fonts/novecentosanswide-normal-webfont.ttf') format('truetype'),
+       url('fonts/novecentosanswide-normal-webfont.svg#novecento_sans_widenormal') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Novecento Sans Web';
+  src: url('fonts/novecentosanswide-demibold-webfont.eot');
+  src: url('fonts/novecentosanswide-demibold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/novecentosanswide-demibold-webfont.woff2') format('woff2'),
+       url('fonts/novecentosanswide-demibold-webfont.woff') format('woff'),
+       url('fonts/novecentosanswide-demibold-webfont.ttf') format('truetype'),
+       url('fonts/novecentosanswide-demibold-webfont.svg#novecento_sans_widedemibold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
