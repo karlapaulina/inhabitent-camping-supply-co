@@ -1,6 +1,6 @@
 <?php
 /**
- * The main template file.
+ * The front-[age] template file.
  *
  * @package RED_Starter_Theme
  */
@@ -10,29 +10,27 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
+	<?php $args = ['post_type' => 'product', 'order' => "ASC"];
+	  $products_posts = get_posts($args);
+	  ?>
 
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-			<?php endif; ?>
+<!--this code is for grabbing the product title and image -->
+	  <?php foreach($products_posts as $post):?>
+	  <h2><?php echo $post->post_title ;?></h2>
+	 <?php echo get_the_post_thumbnail();?>
+	  <?php endforeach ;?>
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+	<!--this code is for grabbing the product categories -->
+	  <?php $bob = ['taxonomy' => 'product-type', 'hide_empty' => 0,];
+	  $products_types = get_terms($bob);
+	  ?>
 
-				<?php get_template_part( 'template-parts/content' ); ?>
+	  <?php foreach($products_types as $types):?>
+	  <p><?php  echo $types->name;?></p>
+	  <?php endforeach ;?>
 
-			<?php endwhile; ?>
 
-			<?php the_posts_navigation(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>
-
+		
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
