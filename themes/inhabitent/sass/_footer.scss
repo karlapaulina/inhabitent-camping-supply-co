@@ -1,0 +1,51 @@
+.site-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-image: url("../../assets/images/dark-wood.png");
+    background-size: cover;
+    width: 100%;
+    padding-top: 60px;
+    padding-left:  275px;
+    padding-right: 275px;
+
+.fa-phone,
+.fa-envelope,
+a,
+.biz-hours-class
+    {
+    color: #FFF;
+}
+
+.fas{
+    margin-right: 15px;
+}
+
+.day-of-week{
+  font-family: 'Merriweather Bold', sans-serif;
+}
+.widget-title{
+    color: $color__brand-orange;
+    @include font-size(1.25);
+     letter-spacing: .10rem;
+     margin-bottom: 15px;
+     text-transform: uppercase;
+}
+
+.footer-logo{
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+}
+
+.footer-copyright{
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    justify-self: center;
+    margin-top: 25px;
+}
+
+.copyright{
+    color: #FFF;
+    font-family: $font_accent;
+}
+}
+
