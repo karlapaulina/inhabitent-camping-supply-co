@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     background-image: url("../../assets/images/dark-wood.png");
-    background-size: cover;
+    background-size: contain;
     width: 100%;
     padding-top: 60px;
     padding-left:  275px;
