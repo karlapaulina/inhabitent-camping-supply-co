@@ -592,8 +592,8 @@ object {
   background-size: contain;
   width: 100%;
   padding-top: 60px;
-  padding-left: 275px;
-  padding-right: 275px; }
+  padding-left: 250px;
+  padding-right: 250px; }
   .site-footer .fa-phone,
   .site-footer .fa-envelope,
   .site-footer a,
@@ -610,14 +610,23 @@ object {
     letter-spacing: .10rem;
     margin-bottom: 15px;
     text-transform: uppercase; }
+  .site-footer .footer-social-icons {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    color: #fff;
+    font-size: 20px;
+    font-size: 1.25rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: -4.5rem; }
   .site-footer .footer-logo {
     grid-column: 4 / 5;
     grid-row: 1 / 2; }
   .site-footer .footer-copyright {
     grid-column: 2 / 4;
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
     justify-self: center;
-    margin-top: 25px; }
+    margin-top: 2.5rem; }
   .site-footer .copyright {
     color: #FFF;
     font-family: "Novecento Sans Web", sans-serif; }
@@ -863,7 +872,8 @@ object {
       margin-bottom: 1rem; }
     .single-post .site-content .site-main .comment-list {
       margin-bottom: 2rem;
-      width: 100%; }
+      width: 100%;
+      list-style-type: none; }
       .single-post .site-content .site-main .comment-list .comment-body {
         display: grid;
         grid-template-columns: 1fr 7fr;

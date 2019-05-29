@@ -14,18 +14,6 @@ get_header(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
-			<section class="social-buttons">
-			<button type="button" class="black-btn">
-			<i class="fab fa-facebook-f"></i>
-			<span>Like</span>
-			<button type="button" class="black-btn">
-			<i class="fab fa-twitter"></i>
-			<span>Tweet</span>
-			<button type="button" class="black-btn">
-			<i class="fab fa-pinterest"></i>
-			<span>Pin</span>
-			</section>
-
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) :
