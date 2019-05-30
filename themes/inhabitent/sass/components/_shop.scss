@@ -1,0 +1,30 @@
+.post-type-archive-product{
+    .page-header{
+        display: grid;
+        grid-row-gap: 1rem;
+        justify-items: center;
+        width: $fixed_width;
+        padding-bottom: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3rem;
+        border-bottom: $dashed_border;
+      
+            h1{
+                @include font-size(2.5);
+                margin-top: 2rem;
+                margin-bottom: 1rem;
+                letter-spacing: .2rem;
+                text-transform: uppercase;
+            }
+            .product-type-list{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                width: 50%;
+                justify-items: center;
+                text-transform: uppercase;
+                font-family: $font_accent;
+                @include font-size(1.2);
+            }
+    }
+}

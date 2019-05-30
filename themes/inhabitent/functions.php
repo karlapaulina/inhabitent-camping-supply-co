@@ -110,6 +110,19 @@ function red_starter_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
 
+add_action('init', 'customs_register_scripts');
+
+function customs_register_scripts() {
+	wp_register_script( 'red-starter-js-customs', get_template_directory_uri() . '/build/js/js-customs.min.js', array('jquery'));
+}
+
+//Enqueue Scripts
+add_action('wp_enqueue_scripts', 'customs_enqueue_scripts');
+function customs_enqueue_scripts() {
+    wp_enqueue_script('red-starter-js-customs');
+}
+
+
 /**
  * Custom template tags for this theme.
  */

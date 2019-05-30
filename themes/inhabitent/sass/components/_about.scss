@@ -1,62 +1,103 @@
 .page-id-29{
     .site-header{
-        a {
-    color: #ffffff;
-    text-shadow: 2px 2px 2px #000000;
-
-	&:visited {
-		color: #fff;
-	}
-	&:hover,
-	&:focus,
-	&:active {
-		color: $color__brand-yellow;
-	}
-	&:focus {
-		outline: thin dotted;
-	}
-	&:hover,
-	&:active {
-		outline: 0;
-	}
-        }
-    }
-    .post-29 {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        position: absolute;
+        top: 0;
         width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        .entry-header{
-         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../assets/images/about-hero.jpg");
-         background-size: cover;
-         background-position: center bottom;
-         background-repeat: none;
-         height: 100vh;
-         display: flex;
-         justify-content: center;
-         width: 100%;
-         .entry-title{
-             align-self: center;
-             color: #fff;
-             text-transform: uppercase;
-            @include font-size(3);
-            letter-spacing: .10rem;
+        height: 100vh;
+        background: transparent;
+        border-bottom: 0;
+        margin: 0; 
+        padding: 0;
+        
+        /* This class is added on scroll*/
+        .fixed {
+            width: 100%;
+            padding: 0 15rem;
+            position: fixed;
+            top: 0;
+            height: 70px;
+            z-index: 1;
+            background: rgba(255, 255, 255, 0.7);
+            border-bottom: $solid_border;
+        }
+        .scroll-nav-links {
+             color: $color__brand-green;
+                    text-shadow: none;
+                    &:visited {
+                        color: $color__brand-purple;
+                    }
+                        &:hover,
+                        &:focus,
+                        &:active {
+                            color: $color__brand-yellow;
+                        }
+                            &:focus {
+                                outline: thin dotted;
+                            }
+                                &:hover,
+                                &:active {
+                                    outline: 0;
+                                }
+                   
+        } 
+
+             li a{
+                 color: #ffffff;
+                    text-shadow: 2px 2px 2px #000000;
+                        &:visited {
+                            color: #fff;
+                        }
+                            &:hover,
+                            &:focus,
+                            &:active {
+                                color: $color__brand-yellow;
+                            }
+                                &:focus {
+                                    outline: thin dotted;
+                                }
+                                    &:hover,
+                                    &:active {
+                                        outline: 0;
+                                    }
+                }
          }
+        .post-29 {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+                .entry-header{
+                    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../assets/images/about-hero.jpg");
+                    background-size: cover;
+                    background-position: center bottom;
+                    background-repeat: none;
+                    height: 100vh;
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                        .entry-title{
+                            align-self: center;
+                            color: #fff;
+                            text-transform: uppercase;
+                            @include font-size(3);
+                            letter-spacing: .10rem;
+                        }
+                }
+                        .entry-content{
+                            width: $fixed_width;
+                            padding-left: 155px;
+                            padding-right: 155px;
+                            padding-top: 20px;
+                            padding-bottom: 20px;
+                                h2{
+                                    @include font-size(2.15);
+                                    text-transform: uppercase;
+                                    letter-spacing: .10rem;
+                                    margin-bottom: 20px;
+                                }
+                        }
         }
-        .entry-content{
-            width: $fixed_width;
-            padding-left: 155px;
-            padding-right: 155px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            h2{
-            @include font-size(2.15);
-            text-transform: uppercase;
-            letter-spacing: .10rem;
-            margin-bottom: 20px;
-            }
-        }
-    }
+    
 }
