@@ -44,18 +44,18 @@
         }
         .entry-content{
             margin-bottom: 4rem;
-        .moretag{
-            font-family: $font_accent;
-            text-transform: uppercase;
-            border: 1px solid #000;
-            padding: 10px 20px;
-            color: #000;
-            &:hover {
-                color: #fff;
-                background: $color__brand-green;
-                border: none;
-	        }
-        }
+            .moretag{
+                font-family: $font_accent;
+                text-transform: uppercase;
+                border: 1px solid #000;
+                padding: 10px 20px;
+                color: #000;
+                &:hover {
+                    color: #fff;
+                    background: $color__brand-green;
+                    border: none;
+                }
+            }
         }
     }
     .widget-area {

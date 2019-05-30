@@ -29,7 +29,10 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<article class="nav-logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri().'/assets/images/logos/' ?>inhabitent-logo-tent.svg" alt="Inhabitent Logo"/></a></article>
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
+					<article class="new-nav-menu">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					<?php get_search_form();?>
+					</article>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 

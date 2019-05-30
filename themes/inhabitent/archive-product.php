@@ -12,6 +12,8 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+     <!--this code -->    
+
     <?php $args = ['post_type' => 'product', 'order' => "ASC"];
 	  $products_posts = get_posts($args);
       ?>
@@ -22,7 +24,7 @@ get_header(); ?>
 	<?php $bob = ['taxonomy' => 'product-type', 'hide_empty' => 0,];
       $products_types = get_terms($bob);
       ?>
- <header class="page-header">     
+ <section class="page-header">     
    <h1>shop stuff</h1>
     <ul class="product-type-list">
         <?php foreach($products_types as $types):?>
@@ -30,15 +32,27 @@ get_header(); ?>
 
         <?php endforeach ;?>
     </ul>
-</header>
+</section>
 
 
-<!--this code is for grabbing the product title and image -->
-	  <?php foreach($products_posts as $post):?>
-	  <h2><?php echo $post->post_title ;?></h2>
-	 <?php echo get_the_post_thumbnail();?>
-      <?php endforeach ;?>
-      
+<!--this code is for grabbing the product title and image -->  
+		<section class="shop-products">
+			<?php while ( have_posts() ) : the_post('showposts=16'); ?>
+
+				<?php if ( has_post_thumbnail() ) : ?>
+				
+			<section class="shop-product">
+					<article class="product-image">
+				        <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url(); ?>"></a>
+                    </article>
+                        <article class="product-meta">
+                            <p class="shop-product-title"><?php echo the_title(); ?></p>   
+                            <p class="shop-product-price">$<?php echo CFS()->get( 'price' ); ?></p>
+                        </article>
+            </section>    
+            <?php endif; endwhile;
+            // End of the loop. ?>
+             </section>
 
 	</main><!-- #main -->
 	</div><!-- #primary -->

@@ -44,32 +44,40 @@ a {
 			
 		}
 	}
-		.nav-menu {
+		.new-nav-menu {
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: flex-end;
 		font-family: 'Novecento Sans Web', sans-serif;
 		text-transform: uppercase;
 		width: 100%;
 		padding-top: 10px;
-		
-		&:hover > a,
-		&.focus > a {
+
+		.nav-menu{
+			display: flex;
+			justify-content: space-between;	
+			align-self: center;
+			width: 100%;
 		}
 	
-		margin: 0 0 $base__space-unit ($base__space-unit * 2);
+		//margin: 0 0 $base__space-unit ($base__space-unit * 2);
 
 		li:hover > ul,
 		li.focus > ul {
 			left: auto;
 		}
+		.search-field{
+		font-family: $font_accent;
+		background: none;
+		border: none;
+		}
+		.search-submit{
+			border: none;
+			color: $color__brand-green;
+			@include font-size(1.2);
+		}
 	
 	}
 	
-
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a {
-	}
 }
 
 /* Small menu. */

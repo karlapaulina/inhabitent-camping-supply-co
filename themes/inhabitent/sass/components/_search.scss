@@ -1,0 +1,82 @@
+.search-results{
+        h1 {
+        @include font-size(2.5);
+        text-transform: uppercase;
+        letter-spacing: .10rem;
+        border-bottom: $solid_border;
+        margin-bottom: 2rem;
+    }
+    .site-content{
+        display: grid;
+        grid-template-columns: 70% 30%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1120px;
+
+        .moretag{
+                font-family: $font_accent;
+                text-transform: uppercase;
+                border: 1px solid #000;
+                padding: 10px 20px;
+                color: #000;
+                &:hover {
+                    color: #fff;
+                    background: $color__brand-green;
+                    border: none;
+                }
+            }
+    }
+    .site-main {
+      padding-top: 2rem;
+      padding-right: 3rem;
+      margin-bottom: 2rem;
+      h2{
+        @include font-size(2);
+        text-transform: uppercase;
+        letter-spacing: .10rem;
+        }
+       .required{
+           color: $color__brand-orange;
+       }
+       .page-numbers{
+            text-align: center;
+            font-family: $font_accent;
+            text-transform: uppercase;
+            color: #fff;
+            background: $color__brand-green;
+            border: none;
+            width: 50%;
+            padding: 5px 10px;
+                &:hover {
+                    background: $color__brand-purple;
+                }
+       }
+        
+    }
+    .widget-area{
+      padding-left: 3.5rem;
+      padding-right: 2.5rem;
+      padding-top: 3rem;
+      border-left: $solid_border;
+      .day-of-week{
+        font-family: 'Merriweather Bold', sans-serif;
+    }
+        a{
+            color: $color__brand-green;
+            text-decoration: none;
+        }
+        h2 {
+        @include font-size(1.5);
+        text-transform: uppercase;
+        letter-spacing: .10rem;
+        margin-bottom: 15px;
+        }
+        .fas{
+            margin-right: 15px;
+        }
+        .widget-archive{
+            text-align: left;
+        }
+    }
+
+}

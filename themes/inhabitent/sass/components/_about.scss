@@ -6,41 +6,7 @@
         height: 100vh;
         background: transparent;
         border-bottom: 0;
-        margin: 0; 
-        padding: 0;
-        
-        /* This class is added on scroll*/
-        .fixed {
-            width: 100%;
-            padding: 0 15rem;
-            position: fixed;
-            top: 0;
-            height: 70px;
-            z-index: 1;
-            background: rgba(255, 255, 255, 0.7);
-            border-bottom: $solid_border;
-        }
-        .scroll-nav-links {
-             color: $color__brand-green;
-                    text-shadow: none;
-                    &:visited {
-                        color: $color__brand-purple;
-                    }
-                        &:hover,
-                        &:focus,
-                        &:active {
-                            color: $color__brand-yellow;
-                        }
-                            &:focus {
-                                outline: thin dotted;
-                            }
-                                &:hover,
-                                &:active {
-                                    outline: 0;
-                                }
-                   
-        } 
-
+        padding-top: 10px;
              li a{
                  color: #ffffff;
                     text-shadow: 2px 2px 2px #000000;
