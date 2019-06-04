@@ -27,7 +27,19 @@
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 				</div><!-- .site-branding -->
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<article class="nav-logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri().'/assets/images/logos/' ?>inhabitent-logo-tent.svg" alt="Inhabitent Logo"/></a></article>
+				
+			
+				<?php 
+					
+				if(is_page('front-page')|| is_page('about')){
+					$logo = get_template_directory_uri().'/assets/images/logos/'."inhabitent-logo-tent-white.svg" ;
+					} else {
+						$logo = get_template_directory_uri().'/assets/images/logos/'."inhabitent-logo-tent.svg" ;
+					}
+				?>
+			
+				
+				<article class="nav-logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo $logo ?>" alt="Inhabitent Logo"/></a></article>
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
 					<article class="new-nav-menu">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>

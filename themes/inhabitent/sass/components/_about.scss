@@ -1,32 +1,4 @@
 .page-id-29{
-    .site-header{
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100vh;
-        background: transparent;
-        border-bottom: 0;
-        padding-top: 10px;
-             li a{
-                 color: #ffffff;
-                    text-shadow: 2px 2px 2px #000000;
-                        &:visited {
-                            color: #fff;
-                        }
-                            &:hover,
-                            &:focus,
-                            &:active {
-                                color: $color__brand-yellow;
-                            }
-                                &:focus {
-                                    outline: thin dotted;
-                                }
-                                    &:hover,
-                                    &:active {
-                                        outline: 0;
-                                    }
-                }
-         }
         .post-29 {
             display: flex;
             justify-content: center;

@@ -13,7 +13,7 @@ input[type="submit"] {
 	color: #fff;
 	@include font-size(0.75);
 	line-height: 1;
-	padding: .6rem 1rem .4rem;
+	padding: .8rem 1.4rem .8rem;
 	text-shadow: 0 1px 0 rgba(19, 7, 7, 0.8);
 	font-family: $font_accent;
 	text-transform: uppercase;
@@ -47,11 +47,31 @@ button {
 
 /* Fields */
 
+.search-field{
+	font-family: $font_accent;
+	color: #666;
+	background: none;
+	border: none;
+	display:none;
+}
+
+.reverse-field{
+	font-family: $font_accent;
+	color: #fff;
+	background: none;
+	border: none;
+	display:none;
+	&:focus {
+		color: $color__brand-yellow;
+		border: none;
+  		border-radius: 0;
+	}
+}
+
 input[type="text"],
 input[type="email"],
 input[type="url"],
 input[type="password"],
-input[type="search"],
 textarea {
 	font-family: $font__main;
 	color: #666;

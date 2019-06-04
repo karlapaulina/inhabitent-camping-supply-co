@@ -1,51 +1,66 @@
 .error404{
-        h1 {
-        @include font-size(2);
+    h1 {
+        @include font-size(2.3);
         text-transform: uppercase;
         letter-spacing: .10rem;
     }
-    .site-content{
-        display: grid;
-        grid-template-columns: 70% 30%;
-        margin-left: auto;
-        margin-right: auto;
-        width: 1120px;
-    }
-    .site-main {
-      padding-top: 2rem;
-      padding-right: 3rem;
-      h2{
-        @include font-size(1.5);
-        text-transform: uppercase;
-        letter-spacing: .10rem;
-        }
-       .required{
-           color: $color__brand-orange;
-       }
-    }
-    .widget-area{
-      padding-left: 3.5rem;
-      padding-right: 2.5rem;
-      padding-top: 3rem;
-      border-left: $solid_border;
-      .day-of-week{
-        font-family: 'Merriweather Bold', sans-serif;
-    }
-        a{
-            color: $color__brand-green;
-            text-decoration: none;
-        }
-        h2 {
-        @include font-size(1.5);
-        text-transform: uppercase;
-        letter-spacing: .10rem;
-        margin-bottom: 15px;
-        }
-        .fas{
-            margin-right: 15px;
-        }
-        .widget-archive{
-            text-align: left;
-        }
-    }
+            .site-content{
+                display: grid;
+                grid-template-columns: 70% 30%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 3rem;
+                width: $fixed_width;
+            }
+            .site-main {
+                padding-top: 2rem;
+                padding-right: 3rem;
+                padding-bottom: 3rem;
+                    h2{
+                        @include font-size(1.5);
+                        text-transform: uppercase;
+                        letter-spacing: .10rem;
+                        margin-bottom: 1rem;
+                    }
+                    .required{
+                        color: $color__brand-orange;
+                    }
+                        .search-form{
+                            margin-bottom: 3rem;
+                            .search-field{
+                                font-family: $font_accent;
+                                width: 30%;
+                            }
+                            .search-submit{
+                                display: none;
+                            }
+                        }
+
+            }
+            .widget-area{
+            padding-left: 3.5rem;
+            padding-right: 2.5rem;
+            padding-top: 2.3rem;
+            padding-bottom: 3rem;
+            border-left: $solid_border;
+                .day-of-week{
+                    font-family: 'Merriweather Bold', sans-serif;
+                }
+                a{
+                    color: $color__brand-green;
+                    text-decoration: none;
+                }
+                h2 {
+                @include font-size(1.5);
+                text-transform: uppercase;
+                letter-spacing: .10rem;
+                margin-bottom: 1rem;
+                }
+                .fas{
+                    margin-right: 15px;
+                }
+                .widget-archive{
+                    text-align: left;
+                }
+            }
 }

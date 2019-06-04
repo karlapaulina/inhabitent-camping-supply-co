@@ -36,6 +36,7 @@ a,
     grid-row: 2 / 3;
     color: #fff;
     @include font-size(1.25);
+    width: 35%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-top: -4.5rem;

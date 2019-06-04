@@ -24,13 +24,10 @@ get_header(); ?>
       ?>
 
  <section class="page-header">     
-      <h1>Categories</h1>
-    <ul class="product-type-list">
-        <?php foreach($products_types as $types):?>
-        <li><a href="<?php  echo get_term_link($types);?>"><?php  echo $types->name;?></a></li>
-
-        <?php endforeach ;?>
-    </ul>
+        <h1>
+         <?php echo single_term_title();?>
+         </h1>
+         <?php  echo term_description();?>
 </section>
 
 

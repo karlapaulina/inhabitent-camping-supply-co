@@ -4,14 +4,14 @@
         text-transform: uppercase;
         letter-spacing: .10rem;
         border-bottom: $solid_border;
-        margin-bottom: 2rem;
     }
     .site-content{
         display: grid;
         grid-template-columns: 70% 30%;
         margin-left: auto;
         margin-right: auto;
-        width: 1120px;
+        margin-top: 3rem;
+        width: $fixed_width;
 
         .moretag{
                 font-family: $font_accent;
@@ -32,11 +32,19 @@
       margin-bottom: 2rem;
       h2{
         @include font-size(2);
+        font-family: $font__main;
         text-transform: uppercase;
         letter-spacing: .10rem;
+        margin-top: 4rem;
         }
        .required{
            color: $color__brand-orange;
+       }
+       .search-pagination{
+           border-top: $solid_border;
+           margin-top: 4.5rem;
+           margin-bottom: 4rem;
+           padding-top: 1.5rem;
        }
        .page-numbers{
             text-align: center;
@@ -56,7 +64,7 @@
     .widget-area{
       padding-left: 3.5rem;
       padding-right: 2.5rem;
-      padding-top: 3rem;
+      padding-top: 2.3rem;
       border-left: $solid_border;
       .day-of-week{
         font-family: 'Merriweather Bold', sans-serif;

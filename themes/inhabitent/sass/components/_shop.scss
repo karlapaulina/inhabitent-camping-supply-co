@@ -45,11 +45,17 @@
             .product-meta{
                 display: flex;
                 justify-content: space-between;
-                padding-left: .5rem;
-                padding-right: .5rem;
+                padding: 1rem;
+                margin-top: -.5rem;
                 border-style: solid;
                 border-color: #e1e1e1;
                 border-width: 4px 1px 1px 1px;
+                
+
+                p {
+                    
+                    margin-bottom: 0;
+                }
             }
     }
 }
