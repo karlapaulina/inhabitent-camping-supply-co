@@ -1,0 +1,58 @@
+.page-id-32 {
+    h1 {
+        @include font-size(2.5);
+        text-transform: uppercase;
+        letter-spacing: .10rem;
+    }
+    .site-content{
+        display: grid;
+        grid-template-columns: 70% 30%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3rem;
+        width: $fixed_width;
+    }
+    .site-main {
+      padding-top: 2rem;
+      padding-right: 3rem;
+      padding-bottom: 3rem;
+      h2{
+        @include font-size(1.75);
+        text-transform: uppercase;
+        letter-spacing: .10rem;
+        }
+       .required{
+           color: $color__brand-orange;
+       }
+        input[type="submit"]{
+            @include font-size(.9);
+            text-shadow: none;
+        }
+    }
+    .widget-area{
+      padding-left: 3.5rem;
+      padding-right: 2.5rem;
+      padding-top: 2.3rem;
+      padding-bottom: 3rem;
+      border-left: $solid_border;
+      .day-of-week{
+        font-family: 'Merriweather Bold', sans-serif;
+    }
+        a{
+            color: $color__brand-green;
+            text-decoration: none;
+        }
+        h2 {
+        @include font-size(1.5);
+        text-transform: uppercase;
+        letter-spacing: .10rem;
+        margin-bottom: 15px;
+        }
+        .fas{
+            margin-right: 15px;
+        }
+        .widget-archive{
+            text-align: left;
+        }
+    }
+}

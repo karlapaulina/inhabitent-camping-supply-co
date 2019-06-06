@@ -20,3 +20,18 @@ function red_starter_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
+
+// custom login for theme
+function my_custom_login_logo() {
+     echo '<style type="text/css">                                                                   
+        .login h1 a { background-image:url('.get_template_directory_uri().'/assets/images/logos/inhabitent-logo-text-dark.svg) !important; 
+         height: 60px !important; width: 300px !important; background-size: 300px;}                            
+	 </style>';
+	 function the_url( $url ) {
+    return get_bloginfo( 'url' );
+}
+add_filter( 'login_headerurl', 'the_url' );
+}
+add_action('login_head', 'my_custom_login_logo');
+
+?>

@@ -1,0 +1,41 @@
+.page-id-29{
+        .post-29 {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+                .entry-header{
+                    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../assets/images/about-hero.jpg");
+                    background-size: cover;
+                    background-position: center bottom;
+                    background-repeat: none;
+                    height: 100vh;
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                        .entry-title{
+                            align-self: center;
+                            color: #fff;
+                            text-transform: uppercase;
+                            @include font-size(3);
+                            letter-spacing: .10rem;
+                        }
+                }
+                        .entry-content{
+                            width: $fixed_width;
+                            padding-left: 155px;
+                            padding-right: 155px;
+                            padding-top: 20px;
+                            padding-bottom: 20px;
+                                h2{
+                                    @include font-size(2.15);
+                                    text-transform: uppercase;
+                                    letter-spacing: .10rem;
+                                    margin-bottom: 20px;
+                                }
+                        }
+        }
+    
+}

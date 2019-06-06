@@ -1,21 +1,37 @@
-# RED Starter
+# Inhabitent - Project 4
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+A custom WordPress theme with custom plugins for an e-commerce site.
 
-## Installation
+### Installing
 
-### 1. Download me (don't clone me!)
+A step by step series of examples that tell you how to get a development env running
 
-Then add me to your `wp-content` directory.
+1. Download me (don't clone me!)
 
-### 2. Rename the `redstarter-master` directory
+```
+Then add me to your wp-content directory.
+```
 
-Make sure that the theme directory name is project appropriate!
+2. Install the dev dependencies
 
-### 3. Install the dev dependencies
+```
+Next you'll need to run npm install inside your theme directory next to install the node modules you'll need for Gulp, etc.
+```
 
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
+3. Update the proxy in gulpfile.js
 
-### 4. Update the proxy in `gulpfile.js`
+```
+Lastly, be sure to update your gulpfile.js with the appropriate URL for the Browsersync proxy (so change localhost[:port-here]/[your-dir-name-here] to the appropriate localhost URL).
+```
 
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
+![Image](/assets/images/inhabitent-screenshot.png)
+
+
+## Built With
+
+* [SASS](https://sass-lang.com/) - The CSS framework used
+* [WORDPRESS](https://developer.wordpress.org/) - CMS used
+
+## Authors
+
+* **Karla Gonzalez** - *Initial work* - [KARLAPAULINA](https://github.com/karlapaulina)

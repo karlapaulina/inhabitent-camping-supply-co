@@ -37,9 +37,10 @@ access_log
 # Ignore everything in "plugins" except certain plugins. #
 # ========================================================== #
 plugins/*
-!plugins/inhabitent-functionality/
+!plugins/red-functionality/
 !plugins/business-hours-widget/
-!plugins/biz-hours-widget2/
+!plugins/contact-info-widget/
+!plugins/custom-field-suite/
 # Ignore everything in "themes" except the active theme. #
 # ========================================================== #
 themes/*

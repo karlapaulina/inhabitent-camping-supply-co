@@ -1,0 +1,45 @@
+.single-product{
+    .site-content{
+        margin-top: 7rem;
+        margin-bottom: 7rem;
+        width: $fixed_width;
+        margin-left: auto;
+        margin-right: auto;
+    }
+        .site-main{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-column-gap: 2rem;
+        
+            .product-image{
+                grid-column: 1 / 2;
+            }
+
+            .product-info{
+                grid-column: 2 / 3;
+
+                    .product-title{
+                        text-transform: uppercase;
+                        color: $color__brand-orange;
+                        letter-spacing: .10rem;
+                        @include font-size(2.4);
+                    }
+
+                    .product-price{
+                        font-family: $font_accent;
+                        @include font-size(1.75);
+                        
+                    }
+
+                    .social-buttons{
+                        display: flex;
+                        width: 60%;
+                        justify-content: space-between;
+                        margin: 1.5rem 0;
+                            i {
+                                margin-right: .5rem;
+                            }
+                    }
+            }
+        }
+}

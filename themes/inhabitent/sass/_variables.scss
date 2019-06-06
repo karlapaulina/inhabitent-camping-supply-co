@@ -1,11 +1,21 @@
 // Structure
 
 $base__space-unit: 1.5rem;
+$fixed_width: 1120px;
+$solid_border: 1px solid #e1e1e1;
+$dashed_border: 1px dashed #c8c8c8;
 
 // Colors
 
 $color__background-body: #fff;
 $color__text-main: #404040;
+
+$color__brand-green: #248A83;
+$color__brand-purple: #2f1339;
+$color__brand-orange: #d99054;
+$color__brand-yellow: #f0e4d1;
+$color__brand-lightgrey: #a1a1a1;
+$color__brand-mediumgrey: #808080;
 
 $color__background-screen: #f1f1f1;
 $color__text-screen: #21759b;
@@ -15,14 +25,20 @@ $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 $color__border-abbr: #666;
 
-$color__link: royalblue;
-$color__link-visited: purple;
+$color__link: $color__brand-green;
+$color__link-visited: $color__brand-purple;
 $color__link-hover: midnightblue;
+
 
 // Typography
 
-$font__main: sans-serif;
+$font__main: 'Merriweather', sans-serif;
+$font_main_bold: 'Merriweather Bold', sans-serif;
+$font_main_italic: 'Merriweather Italic', sans-serif;
+$font_main_bolditalic: 'Merriweather Bold Italic', sans-serif;
+$font_accent: 'Novecento Sans Web', sans-serif;
+$font_accent_bold: 'Novecento Sans Web Bold', sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
-$font__line-height-body: 1.5;
+$font__line-height-body: 1.75;
 $font__line-height-pre: 1.6;

@@ -39,6 +39,7 @@ function red_starter_setup() {
 endif; // red_starter_setup
 add_action( 'after_setup_theme', 'red_starter_setup' );
 
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
@@ -67,6 +68,20 @@ function red_starter_widgets_init() {
 }
 add_action( 'widgets_init', 'red_starter_widgets_init' );
 
+function red_starter_widgets_init2() {
+	register_sidebar( array(
+		'name'          => esc_html( 'Footer Sidebar' ),
+		'id'            => 'sidebar-2',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+}
+add_action( 'widgets_init', 'red_starter_widgets_init2' );
+
+
 /**
  * Filter the stylesheet_uri to output the minified CSS file.
  */
@@ -83,6 +98,7 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
  * Enqueue scripts and styles.
  */
 function red_starter_scripts() {
+	wp_enqueue_style('font-awesome', 'https://use.fontawesome.com/releases/v5.8.2/css/all.css"');
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'red-starter-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
@@ -94,6 +110,19 @@ function red_starter_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
 
+add_action('init', 'customs_register_scripts');
+
+function customs_register_scripts() {
+	wp_register_script( 'red-starter-js-customs', get_template_directory_uri() . '/build/js/js-customs.min.js', array('jquery'));
+}
+
+//Enqueue Scripts
+add_action('wp_enqueue_scripts', 'customs_enqueue_scripts');
+function customs_enqueue_scripts() {
+    wp_enqueue_script('red-starter-js-customs');
+}
+
+
 /**
  * Custom template tags for this theme.
  */
@@ -103,3 +132,4 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
