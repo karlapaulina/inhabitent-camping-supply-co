@@ -1,10 +1,32 @@
-# Inhabitent - Project 4
+# Inhabitent Camping Supply Co.
 
-A custom WordPress theme with custom plugins for an e-commerce site.
+A WordPress e-Commerce site with a custom-built theme and custom-built plugins.
 
-### Installing
+![Image](assets/images/inhabitent-screenshot.png)
 
-A step by step series of examples that tell you how to get a development env running
+
+## Built With
+
+* [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+* [jQuery](https://jquery.com/)
+* [SASS](https://sass-lang.com/)
+* [PHP](https://developer.wordpress.org/)
+*  Wordpress CMS
+
+
+## Personal learnings
+
+* First time working with and implementing Wordpress hierarchy
+* First time working with and implementing PHP for custom-built theme and plugins
+* This project reinforced knowledge in Wordpress CMS and PHP admin panel, CSS grid, and SASS.
+
+## Authors
+
+* [Karla Gonzalez](https://github.com/karlapaulina)
+
+## Installing
+
+A step by step series of examples that tell you how to get a development environment running
 
 1. Download me (don't clone me!)
 
@@ -23,15 +45,3 @@ Next you'll need to run npm install inside your theme directory next to install 
 ```
 Lastly, be sure to update your gulpfile.js with the appropriate URL for the Browsersync proxy (so change localhost[:port-here]/[your-dir-name-here] to the appropriate localhost URL).
 ```
-
-![Image](/assets/images/inhabitent-screenshot.png)
-
-
-## Built With
-
-* [SASS](https://sass-lang.com/) - The CSS framework used
-* [WORDPRESS](https://developer.wordpress.org/) - CMS used
-
-## Authors
-
-* **Karla Gonzalez** - *Initial work* - [KARLAPAULINA](https://github.com/karlapaulina)
