@@ -34,6 +34,7 @@ access_log
 !themes/
 !uploads/
 !README.md
+!inhabitent-screenshot.png
 # Ignore everything in "plugins" except certain plugins. #
 # ========================================================== #
 plugins/*
@@ -52,10 +53,3 @@ uploads/wp-migrate-db/
 # =============== #
 themes/inhabitent/node_modules/
 Collapse
-
-
-
-Message Input
-
-
-Message to-wdpp-q2-2019
